@@ -1,0 +1,21 @@
+name: v24fordb Theme
+type: theme
+description: 'Custom Theme for v24fordb Website.'
+package: Other
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - v24fordb/global-styling
+
+base theme: classy
+regions:
+  branding: Branding
+  navigation: Main navigation
+  search: Search
+  featured: Featured
+  content: Content
+  right_sidebar: Right sidebar
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_bottom: Footer Bottom
