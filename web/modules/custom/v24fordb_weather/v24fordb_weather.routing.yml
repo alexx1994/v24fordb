@@ -1,0 +1,7 @@
+v24fordb_weather.routing:
+  path: '/weather'
+  defaults:
+    _title: 'Weather in Lutsk'
+    _controller: '\Drupal\v24fordb_weather\Controller\WeatherController::content'
+  requirements:
+    _permission: 'access content'
