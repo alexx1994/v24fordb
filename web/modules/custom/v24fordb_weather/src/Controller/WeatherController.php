@@ -22,7 +22,6 @@ class WeatherController extends ControllerBase {
   public function content() {
     return array (
       '#theme' => 'weather',
-      '#test_var' => 'Test value',
     );
   }
 }

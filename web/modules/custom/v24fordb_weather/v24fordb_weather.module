@@ -28,6 +28,8 @@ use Drupal\Core\Routing\RouteMatchInterface;
  */
 function v24fordb_weather_theme($existing, $type, $theme, $path) {
   return [
-    'weather' => array(),
+    'weather' => array(
+      'variables' => NULL,
+    ),
   ];
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\v23fordb_weather\Plugin\Block;
+namespace Drupal\v24fordb_weather\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
@@ -8,9 +8,9 @@ use Drupal\Core\Block\BlockBase;
  * Provides a 'weather' Block.
  *
  * @Block(
- *   id = "hello_block",
- *   admin_label = @Translation("Hello block"),
- *   category = @Translation("Hello World"),
+ *   id = "weather_block",
+ *   admin_label = @Translation("Weather"),
+ *   category = @Translation("Custom"),
  * )
  */
 class WeatherBlock extends BlockBase {
@@ -19,9 +19,9 @@ class WeatherBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return [
-      'weather' => array(),
-    ];
+    return array (
+      '#theme' => 'weather',
+    );
   }
 
 }
