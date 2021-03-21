@@ -1,0 +1,7 @@
+v24fordb_exchange.routing:
+  path: '/exchange'
+  defaults:
+    _title: 'Exchange rate'
+    _controller: '\Drupal\v24fordb_exchange\Controller\ExchangeController::content'
+  requirements:
+    _permission: 'access content'

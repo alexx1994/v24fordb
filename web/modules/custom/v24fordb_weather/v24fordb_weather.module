@@ -6,22 +6,6 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
-//
-///**
-// * Implements hook_help().
-// */
-//function v24fordb_weather_help($route_name, RouteMatchInterface $route_match) {
-//  switch ($route_name) {
-//    // Main module help for the v24fordb_weather module.
-//    case 'help.page.helloworld':
-//      $output = '';
-//      $output .= '<h3>' . t('About') . '</h3>';
-//      $output .= '<p>' . t('Hello World example module') . '</p>';
-//      return $output;
-//
-//    default:
-//  }
-//}
 
 /**
  * Implements hook_theme().
@@ -29,7 +13,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 function v24fordb_weather_theme($existing, $type, $theme, $path) {
   return [
     'weather' => array(
-      'variables' => NULL,
+      'variables' => array(),
     ),
   ];
 }

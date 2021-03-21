@@ -1,5 +1,5 @@
 name: Weather
-description: Creates a page and block showing Weather.
+description: Create a page and block showing Weather.
 package: Custom
 
 type: module

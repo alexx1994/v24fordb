@@ -1,0 +1,7 @@
+name: Exchange rate
+description: Create a page and block showing Exchange rate.
+package: Custom
+
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
