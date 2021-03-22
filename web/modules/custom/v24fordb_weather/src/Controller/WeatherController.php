@@ -20,8 +20,8 @@ class WeatherController extends ControllerBase {
    *   Return Weather.
    */
   public function content() {
-    return array (
+    return [
       '#theme' => 'weather',
-    );
+    ];
   }
 }

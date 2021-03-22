@@ -1,1 +1,28 @@
-<div> Exchange rate: {{ test }} </div>
+{% if items is not empty %}
+  <table>
+    <tr>
+      <th>Exchange rate to UAH</th>
+      <th>Buy</th>
+      <th>Sale</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+      <th>
+        {% if item.ccy %}
+          <h3>{{ item.ccy }}</h3>
+        {% endif %}
+      </th>
+      <th>
+        {% if item.buy %}
+          <p>{{ item.buy }}</p>
+        {% endif %}
+      </th>
+      <th>
+        {% if item.sale %}
+          <p>{{ item.sale }}</p>
+        {% endif %}
+      </th>
+    </tr>
+    {% endfor %}
+  </table>
+{% endif %}

@@ -20,21 +20,23 @@ class ExchangeController extends ControllerBase {
    *   Return Exchange rate.
    */
   public function content() {
-    return array (
+    return [
       '#theme' => 'exchange',
-      '#test' => $this->GetExchange(),
-    );
+      '#items' => $this->GetExchange(),
+    ];
   }
 
-  public function GetExchange() {
-//    $url = "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5";
+  function GetExchange() {
+    $url = "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5";
 
-//    $json = file_get_contents($url);
-//    $result = json_decode($json);
+    $json = file_get_contents($url);
+    $result = json_decode($json);
 
-//    ksm($result);
+    if ($result) {
+      $lenght = count($result);
+      unset($result[$lenght - 1]);
+    }
 
-//    return $result;
-    return '';
+    return $result;
   }
 }

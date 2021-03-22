@@ -19,9 +19,9 @@ class WeatherBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return array (
+    return [
       '#theme' => 'weather',
-    );
+    ];
   }
 
 }
