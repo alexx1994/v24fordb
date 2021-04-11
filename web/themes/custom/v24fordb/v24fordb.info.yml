@@ -9,13 +9,22 @@ libraries:
 
 base theme: classy
 regions:
-  branding: Branding
+  top_header: Top header
+  bottom_header: Bottom header
   navigation: Main navigation
-  search: Search
-  featured: Featured
+  left_sidebar: Left sidebar
   content: Content
   right_sidebar: Right sidebar
-  footer_first: Footer First
-  footer_second: Footer Second
-  footer_third: Footer Third
-  footer_bottom: Footer Bottom
+  top_footer: Top footer
+  bottom_footer: Bottom footer
+
+#  branding: Branding
+#  navigation: Main navigation
+#  search: Search
+#  featured: Featured
+#  content: Content
+#  right_sidebar: Right sidebar
+#  footer_first: Footer First
+#  footer_second: Footer Second
+#  footer_third: Footer Third
+#  footer_bottom: Footer Bottom

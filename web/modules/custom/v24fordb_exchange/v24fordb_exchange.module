@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * v24fordb_exchange module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function v24fordb_exchange_theme($existing, $type, $theme, $path) {
+  return [
+    'exchange' => [
+      'variables' => [
+        'items' => [],
+      ],
+      'file' => 'v24fordb_exchange.theme.inc',
+    ],
+  ];
+}
