@@ -1,0 +1,7 @@
+name: Current time
+description: Create a page and block showing Current time.
+package: Custom
+
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
