@@ -30,11 +30,10 @@ class ExchangeController extends ControllerBase {
     $url = "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5";
 
     $json = file_get_contents($url);
-    $result = json_decode($json);
+    $full_result = json_decode($json);
 
-    if ($result) {
-      $lenght = count($result);
-      unset($result[$lenght - 1]);
+    if ($full_result) {
+      $result = array_slice($full_result, 0, 2);
     }
 
     return $result;

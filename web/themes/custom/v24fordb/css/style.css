@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0px auto;
+  padding: 0px; }
+
+.header {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column; }
+
+.top--header {
+  display: flex;
+  flex-direction: row;
+  max-height: 80px;
+  height: 50px;
+  width: 100%; }
+
+.region-top-header {
+  display: flex;
+  width: 100%; }
+
+.top-header-flexgrow {
+  flex-grow: 1; }
+
+.block-v24fordb-branding {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.block-v24fordb-exchange {
+  display: flex; }
+
+.exchange-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.exchange {
+  display: flex;
+  max-height: 80px;
+  flex-direction: row;
+  margin: 0px 10px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center; }
+
+.exchange-ccy {
+  display: flex;
+  font-size: 16pt;
+  max-height: 80px;
+  margin: 0px 10px;
+  justify-content: center;
+  align-items: center; }
+
+.exchange-baseccy {
+  display: flex;
+  flex-direction: column;
+  max-height: 40px;
+  margin: 0px 10px;
+  padding: 0px;
+  font-size: 11pt;
+  justify-content: center;
+  align-items: center; }
+
+.exchange-buy {
+  display: flex;
+  flex-direction: column;
+  max-height: 40px;
+  margin: 0px 10px;
+  padding: 0px;
+  font-size: 11pt;
+  text-align: center;
+  justify-content: center; }
+
+.exchange-sale {
+  display: flex;
+  flex-direction: column;
+  max-height: 40px;
+  margin: 0px 10px;
+  padding: 0px;
+  font-size: 11pt;
+  text-align: center;
+  justify-content: center; }
+
+.bottom--header {
+  display: flex;
+  flex-direction: row; }
+
+.region-bottom-header {
+  display: flex; }
+
+.main--navigation {
+  display: flex;
+  flex-direction: row; }
+
+#block-v24fordb-main-menu {
+  display: flex;
+  flex-direction: row; }
+
+ul.menu {
+  display: flex;
+  flex-direction: row; }
+
+.main {
+  background-color: cadetblue; }
+
+.footer {
+  background-color: cornflowerblue; }
