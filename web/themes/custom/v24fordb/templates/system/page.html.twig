@@ -11,15 +11,29 @@
     </div>
   </header>
   <section class="main" id="main">
-    <aside class="left--sidebar" id="left-sidebar" role="complementary">
-      {{ page.left_sidebar }}
-    </aside>
-    <main aria-label="Site main content" class="content" id="content" role="main">
-      {{ page.content }}
-    </main>
-    <aside class="right--sidebar" id="right-sidebar" role="complementary">
-      {{ page.right_sidebar }}
-    </aside>
+    {% if page.left_sidebar is not empty %}
+      <div class="main-flexgrow">
+        <aside class="left--sidebar" id="left-sidebar" role="complementary">
+          {{ page.left_sidebar }}
+        </aside>
+      </div>
+    {% else %}
+      <div class="main-flexgrow" style="display: none;">
+        <aside class="left--sidebar" id="left-sidebar" role="complementary">
+          {{ page.left_sidebar }}
+        </aside>
+      </div>
+    {% endif %}
+    <div class="main-flexgrow">
+      <main aria-label="Site main content" class="content" id="content" role="main">
+        {{ page.content }}
+      </main>
+    </div>
+    <div class="main-flexgrow">
+      <aside class="right--sidebar" id="right-sidebar" role="complementary">
+        {{ page.right_sidebar }}
+      </aside>
+    </div>
   </section>
   <footer aria-label="Site footer" class="footer" id="footer" role="contentinfo">
     <div class="top--footer">
