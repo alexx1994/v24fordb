@@ -1,0 +1,7 @@
+v24fordb_ct.routing:
+  path: '/ct'
+  defaults:
+    _title: 'Current time'
+    _controller: '\Drupal\v24fordb_ct\Controller\CtController::content'
+  requirements:
+    _permission: 'access content'

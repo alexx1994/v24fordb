@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * v24fordb_ct module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function v24fordb_ct_theme($existing, $type, $theme, $path) {
+  return [
+    'ct' => [
+      'variables' => [
+        'current_time' => [],
+      ]
+    ],
+  ];
+}

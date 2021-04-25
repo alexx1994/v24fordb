@@ -1,28 +1,33 @@
 {% if items is not empty %}
-  <table>
-    <tr>
-      <th>Exchange rate to UAH</th>
-      <th>Buy</th>
-      <th>Sale</th>
-    </tr>
+  <div class="exchange-container">
     {% for item in items %}
-    <tr>
-      <th>
+    <div class="exchange">
+      <div class="exchange-ccy">
         {% if item.ccy %}
-          <h3>{{ item.ccy }}</h3>
+          {{ item.ccy }}
         {% endif %}
-      </th>
-      <th>
-        {% if item.buy %}
-          <p>{{ item.buy }}</p>
-        {% endif %}
-      </th>
-      <th>
-        {% if item.sale %}
-          <p>{{ item.sale }}</p>
-        {% endif %}
-      </th>
-    </tr>
+      </div>
+      <div>
+        <div class="exchange-buy">
+          Buy
+        </div>
+        <div class="exchange-baseccy">
+          {% if item.buy and item.base_ccy %}
+            {{ item.buy }} {{ item.base_ccy }}
+          {% endif %}
+        </div>
+      </div>
+      <div>
+        <div class="exchange-sale">
+          Sale
+        </div>
+        <div class="exchange-baseccy">
+          {% if item.sale and item.base_ccy %}
+            {{ item.sale }} {{ item.base_ccy }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
     {% endfor %}
-  </table>
+  </div>
 {% endif %}
