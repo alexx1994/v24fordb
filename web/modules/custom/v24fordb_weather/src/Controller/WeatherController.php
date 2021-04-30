@@ -1,27 +1,24 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\v24fordb_weather\WeatherController.
- */
-
 namespace Drupal\v24fordb_weather\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 
 /**
- * Class WeatherController.
+ * Class WeatherController returns for Weather routes.
  */
 class WeatherController extends ControllerBase {
+
   /**
-   * Weather.
+   * Prepare content for the response.
    *
    * @return array
-   *   Return Weather.
+   *   The Weather label.
    */
   public function content() {
     return [
       '#theme' => 'weather',
     ];
   }
+
 }
