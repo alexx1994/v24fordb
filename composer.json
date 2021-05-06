@@ -45,7 +45,7 @@
         "drupal/share_everywhere": "^2.0",
         "drupal/simple_sitemap": "^3.9",
         "drupal/token": "^1.9",
-        "drupal/twig_tweak": "^3.0",
+        "drupal/twig_tweak": "3.1.1",
         "drupal/youtube": "^1.2",
         "drush/drush": "^10.3",
         "vlucas/phpdotenv": "^5.1",

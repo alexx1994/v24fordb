@@ -1,0 +1,31 @@
+uuid: a4dbcc88-483d-4c3d-a5cb-c980b0b9f410
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - system
+  theme:
+    - v24fordb
+third_party_settings:
+  block_class:
+    classes: block-v24fordb-main-menu
+_core:
+  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
+id: v24fordb_main_menu
+theme: v24fordb
+region: navigation
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

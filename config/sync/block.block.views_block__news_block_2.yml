@@ -1,0 +1,29 @@
+uuid: 115d4db9-72a7-427d-89f6-2af5d30d43ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - v24fordb
+id: views_block__news_block_2
+theme: v24fordb
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:news-block_2'
+settings:
+  id: 'views_block:news-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

@@ -1,0 +1,24 @@
+uuid: 1ed5a78f-ceab-4ccf-97bc-38d03f9d0b40
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - v24fordb_ct
+  theme:
+    - v24fordb
+third_party_settings:
+  block_class:
+    classes: block-v24fordb-ct
+id: currenttime
+theme: v24fordb
+region: bottom_header
+weight: -7
+provider: null
+plugin: current_time_block
+settings:
+  id: current_time_block
+  label: 'Current time'
+  provider: v24fordb_ct
+  label_display: '0'
+visibility: {  }

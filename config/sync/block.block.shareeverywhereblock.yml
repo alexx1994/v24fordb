@@ -1,0 +1,29 @@
+uuid: 05f9fdaa-5cea-4c27-aed4-4a1239400f49
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - share_everywhere
+    - system
+  theme:
+    - v24fordb
+third_party_settings:
+  block_class:
+    classes: v24fordb_frontpage_share
+id: shareeverywhereblock
+theme: v24fordb
+region: left_sidebar
+weight: 0
+provider: null
+plugin: share_everywhere_block
+settings:
+  id: share_everywhere_block
+  label: 'Share Everywhere Block'
+  provider: share_everywhere
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

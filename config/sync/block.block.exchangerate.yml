@@ -1,0 +1,24 @@
+uuid: 08a51381-af72-4008-bab0-9ee46696cefc
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - v24fordb_exchange
+  theme:
+    - v24fordb
+third_party_settings:
+  block_class:
+    classes: 'block-v24fordb-exchange top-header-flexgrow'
+id: exchangerate
+theme: v24fordb
+region: top_header
+weight: 0
+provider: null
+plugin: exchange_block
+settings:
+  id: exchange_block
+  label: 'Exchange rate'
+  provider: v24fordb_exchange
+  label_display: '0'
+visibility: {  }
