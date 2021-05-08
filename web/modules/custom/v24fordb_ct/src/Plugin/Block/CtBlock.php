@@ -21,13 +21,20 @@ class CtBlock extends BlockBase {
   public function build() {
     return [
       '#theme' => 'ct',
-      '#current_time' => $this->GetCurrentTime(),
+      '#current_time' => $this->getCurrentTime(),
     ];
   }
 
-  function GetCurrentTime() {
+  /**
+   * Get and return Current time.
+   *
+   * @return string
+   *   Return usd and eur to uah exchage rate.
+   */
+  public function getCurrentTime() {
     $today = date("F j, Y, G:i");
 
     return $today;
   }
+
 }

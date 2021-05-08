@@ -1,0 +1,33 @@
+uuid: 1513b20f-4821-4e3a-8d6b-ec5cc2de835a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - v24fordb
+third_party_settings:
+  block_class:
+    classes: v24fordb-last-news
+id: views_block__news_block_1_2
+theme: v24fordb
+region: right_sidebar
+weight: -11
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n"
+    negate: true

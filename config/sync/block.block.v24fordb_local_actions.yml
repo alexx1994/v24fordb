@@ -1,0 +1,20 @@
+uuid: 62018cc6-30d6-4b4a-b8cf-fd60643017d7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - v24fordb
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: v24fordb_local_actions
+theme: v24fordb
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

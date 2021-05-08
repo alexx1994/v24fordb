@@ -1,34 +1,37 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\v24fordb_current_time\CurrentTimeController.
- */
-
 namespace Drupal\v24fordb_ct\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 
 /**
- * Class CtController.
+ * Returns responses for ct module routes.
  */
 class CtController extends ControllerBase {
+
   /**
-   * Current time.
+   * Route title callback.
    *
-   * @return string
-   *   Return Current time.
+   * @return array
+   *   The ct label.
    */
   public function content() {
     return [
       '#theme' => 'ct',
-      '#current_time' => $this->GetCurrentTime(),
+      '#current_time' => $this->getCurrentTime(),
     ];
   }
 
-  function GetCurrentTime() {
+  /**
+   * Get and return Current time.
+   *
+   * @return string
+   *   Return usd and eur to uah exchage rate.
+   */
+  private function getCurrentTime() {
     $today = date("F j, Y, G:i");
 
     return $today;
   }
+
 }

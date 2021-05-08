@@ -21,11 +21,17 @@ class ExchangeBlock extends BlockBase {
   public function build() {
     return [
       '#theme' => 'exchange',
-      '#items' => $this->GetExchange(),
+      '#items' => $this->getExchange(),
     ];
   }
 
-  function GetExchange() {
+  /**
+   * Get and return Exchange rate.
+   *
+   * @return array
+   *   Return usd and eur to uah exchage rate.
+   */
+  public function getExchange() {
     $url = "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5";
 
     $json = file_get_contents($url);
