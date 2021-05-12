@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="phpcs-standard">
+  <description>Codestyle ruleset for Drupal</description>
+
+  <!-- Specify standards. -->
+  <rule ref="Drupal"/>
+  <rule ref="DrupalPractice"/>
+
+  <!-- Include path with the Drupal and DrupalPractice rules. -->
+  <config name="installed_paths" value="vendor/drupal/coder/coder_sniffer"/>
+
+  <!-- Set ignore extensions. -->
+  <arg name="ignore" value="*.css,*.md,*.txt, web/themes/custom/v24fordb/node_modules/*"/>
+
+  <!-- Specify folders. -->
+  <file>web/modules/custom</file>
+  <file>web/themes/custom</file>
+</ruleset>
