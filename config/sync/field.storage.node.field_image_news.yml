@@ -1,0 +1,30 @@
+uuid: 11a7a5fa-b873-4789-b414-f24869b763be
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_image_news
+field_name: field_image_news
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 1a367fff-3ce6-4a78-92d3-44e9218b5472
+    alt: 'no image {{title}}'
+    title: 'no image {{title}}'
+    width: 512
+    height: 512
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

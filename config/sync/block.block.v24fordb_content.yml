@@ -1,0 +1,22 @@
+uuid: 094075c9-cff6-4ca9-a351-29b7ffc63e2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - v24fordb
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: v24fordb_content
+theme: v24fordb
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

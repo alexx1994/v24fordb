@@ -1,0 +1,29 @@
+uuid: 7c01517c-7aaa-4704-98ac-4386f029f20f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+    - v24fordb_weather
+  theme:
+    - v24fordb
+third_party_settings:
+  block_class:
+    classes: .v24fordb_weather
+id: weather_2
+theme: v24fordb
+region: right_sidebar
+weight: -10
+provider: null
+plugin: weather_block
+settings:
+  id: weather_block
+  label: Weather
+  provider: v24fordb_weather
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n"
+    negate: true

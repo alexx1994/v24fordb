@@ -1,0 +1,26 @@
+uuid: 10d3d30d-6b73-446c-ba01-52c4071841f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - v24fordb
+third_party_settings:
+  block_class:
+    classes: block-v24fordb-powered
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: v24fordb_powered
+theme: v24fordb
+region: bottom_footer
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

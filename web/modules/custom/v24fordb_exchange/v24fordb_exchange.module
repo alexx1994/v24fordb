@@ -15,8 +15,7 @@ function v24fordb_exchange_theme($existing, $type, $theme, $path) {
     'exchange' => [
       'variables' => [
         'items' => [],
-      ],
-      'file' => 'v24fordb_exchange.theme.inc',
+      ]
     ],
   ];
 }

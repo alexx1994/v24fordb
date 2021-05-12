@@ -1,32 +1,34 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\v24fordb_exchange\ExchangeController.
- */
-
 namespace Drupal\v24fordb_exchange\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 
 /**
- * Class ExchangeController.
+ * Class ExchangeController returns for Exchange routes..
  */
 class ExchangeController extends ControllerBase {
+
   /**
-   * Exchange rate.
+   * Prepare content for the response.
    *
    * @return array
-   *   Return Exchange rate.
+   *   The Exchange rate label.
    */
   public function content() {
     return [
       '#theme' => 'exchange',
-      '#items' => $this->GetExchange(),
+      '#items' => $this->getExchange(),
     ];
   }
 
-  function GetExchange() {
+  /**
+   * Get and return Exchange rate.
+   *
+   * @return array
+   *   Return usd and eur to uah exchage rate.
+   */
+  public function getExchange() {
     $url = "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5";
 
     $json = file_get_contents($url);
@@ -38,4 +40,5 @@ class ExchangeController extends ControllerBase {
 
     return $result;
   }
+
 }

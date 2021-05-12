@@ -1,9 +1,9 @@
 // Gulpfile.js running on stratumui,
 // a css framework available on npmjs.com
-var gulp    = require('gulp'),
-  sass    = require('gulp-sass'),
-  concat  = require('gulp-concat'),
-  uglify  = require('gulp-uglify');
+var gulp = require('gulp'),
+  sass = require('gulp-sass'),
+  concat = require('gulp-concat'),
+  uglify = require('gulp-uglify');
 
 var paths = {
   styles: {
